@@ -1,0 +1,50 @@
+ 1.create  global exception that handles whatever exceptions are thrown in the application and returns a proper response to the client.
+ 2.what are generation techniques for jpa primary keys?
+
+ 3. @RequestMapping
+ 4. @RequestBody
+ 5. @RequestParam
+ 6. @PathVariable
+ 7. @RestController
+ 8. @Controller
+ 9. @Service
+ 10.@Repository
+ 11.@Primary
+ 12.@RequestHeader
+ 13. @ResponseStatus
+ 14. @ExceptionHandler
+ 15. @Autowired(types of autowiring)  , how lombok is autowiring
+ 16. @Qualifier
+ 17. @Qualifier vs @Primary
+ 18. @Component
+ 19. @ComponentScan
+ 20. @Configuration
+ 21. @Bean
+ 22. @Value
+ 23. @PropertySource
+ 24. @EnableAutoConfiguration
+ 25. @SpringBootApplication
+ 26. @EnableJpaRepositories
+ 27. @Entity
+ 28. @Table
+ 29. @Id
+ 30. @GeneratedValue
+ 31. @Column
+ 32. @Transient
+ 33. @OneToOne
+
+ 34.@PostMapping , @GetMapping, @PutMapping, @DeleteMapping
+ 35. idempotency vs non- idempotency
+ 36. @RestControllerAdvice
+ 37. @ControllerAdvice
+
+
+ 38. Mapping learning jpa :
+1. one to one
+ 2.one to many
+ 3.many top many
+ 4.Many to one
+
+
+
+how save() method understand that upcoming request is for insert or update operation in jpa?
