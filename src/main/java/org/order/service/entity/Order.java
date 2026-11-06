@@ -22,7 +22,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
-    private String userId;
+    private String userId ;
     private String productId;
     private int quantity;
     private double totalPrice;
