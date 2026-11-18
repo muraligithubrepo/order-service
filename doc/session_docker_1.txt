@@ -1,0 +1,67 @@
+core concept:
+--------------------
+ 1. images
+ 2. container
+ 3. layer
+ 4. registry
+ 5. tag/digest
+ 6. volume
+ 7. network
+ 8. compose
+
+
+
+Registry: Server that stores the  images,( images can be own images, predefined images)
+
+
+eg: docker hub, aws ECR,github container registry, Jfrog etc)
+
+
+Flow:
+
+-------
+
+1. write dockerFile
+2. docker build
+3. docker run
+4. docker push
+5. docker logs
+6. fixes
+7. rebuild
+
+
+
+-------------------------------------------------------------------------------------
+dockerFile:
+------------
+1.FROM : base Image
+2.WORKDIR : setting workdire for further Instruction
+3.COPY: to use for copying the jar etc.
+4.RUN :  install pkg, compilie, create layer
+5.ENV : at build/run time , to pass env varibles
+6.ARG  : build time variable
+7.EXPOSE : port exposing
+8.ENTRYPOINT  : fixed executable ["java", "-jar", "app.jar"]
+9.CMD  : default command to run app
+10.HEALTHCHECK  : to check health periodically
+
+
+Images:
+------------
+1. docker build -t myapp:1.0  .
+2. docker build -f docker/DockerFile.prod -t myapp:1.0  .
+3. docker images
+4. docker tag <OLDNAME:TAGE>  <NEWNAME:TAG>
+5. docker login
+6. docker push <IMAGE_NAME:TAG>
+7. docker rmi <IMAGE_NAME:TAG>
+8. docker pull <IMAGE_NAME:TAG>
+9. docker history <IMAGE_NAME:TAG>
+10.docker save -o app.tar vijayrathor/oder_service:1.0.0
+11. docker load -i app.tar
+
+
+12: No cache
+13: arh
+14: env
+15: --build
