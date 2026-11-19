@@ -62,6 +62,41 @@ Images:
 
 
 12: No cache
-13: arh
+13: arg
 14: env
 15: --build
+
+
+Container:
+--------------
+Running instance of Image called Container.
+
+1. docker run  -p <HOST:CONTAINER> <IMAGE_NAME>
+2. docker run --name <CONTAINER_NAME>  -p <HOST:CONTAINER> <IMAGE_NAME>
+3. docker run -d --name <CONTAINER_NAME>  -p <HOST:CONTAINER> <IMAGE_NAME>
+4. docker ps
+5. docker ps -a
+5. docker stop <CONTAINER_NAME>/<CONTAINER_ID>
+5. docker restart <CONTAINER_NAME>/<CONTAINER_ID>
+5. docker start <CONTAINER_NAME>/<CONTAINER_ID>
+6 docker rm <CONTAINER_NAME>/<CONTAINER_ID>
+7. docker rm web_app2 --force
+8. docker logs -f --tail <#_OF_LINES>  <CONTAINER_NAME>/<CONTAINER_ID>
+9. docker inspect <CONTAINER_NAME>/<CONTAINER_ID>
+10. docker stats
+11. docker exec -it <CONTAINER_NAME>/<CONTAINER_ID> sh  : enter inside container
+12. docker top <CONTAINER_NAME>/<CONTAINER_ID>
+
+
+
+#multilayer images
+db
+env
+arg
+-buuild cahce
+
+
+
+
+
+
