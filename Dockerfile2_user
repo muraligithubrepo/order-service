@@ -1,0 +1,21 @@
+#-- as app user , it is very risky in prod --------
+# ----Build Stage -----------
+FROM maven:3.9-eclipse-temurin-21 AS stage1
+WORKDIR /build
+COPY pom.xml .
+RUN mvn dependency:go-offline
+COPY src /.src
+RUN mvn clean package -DskipTests
+
+
+
+# -----Runtime stage -------
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+
+RUN groupadd -r -g 10001 app & useradd -r -u 10001 -g app app
+
+COPY --from=stage1 /build/target/Order-Service.jar app.jar
+USER app
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]

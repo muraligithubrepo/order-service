@@ -90,10 +90,16 @@ Running instance of Image called Container.
 
 
 #multilayer images
+
+tomorrow session:
+--------------------
+
 db
 env
 arg
 -buuild cahce
+network
+volume
 
 
 
